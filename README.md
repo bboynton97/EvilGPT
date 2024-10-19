@@ -35,6 +35,7 @@ EvilGPT is a malware designed to intelligently and quickly extract valuable data
     - Create files that look like they are being used by the user
     - Some valuable, some not
 3. Build a malware agent (@bboynton97)
+    - Use LiteLLM with Crew to run the agent on the jailbroken LLM
 4. Give the the agent access to Open Interpreter (@bboynton97)
 5. Give th agent access to send files via FTP (@bboynton97)
 6. Prompt the agent to accomplish the goals (@areibman)

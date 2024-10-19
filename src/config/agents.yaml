@@ -1,0 +1,16 @@
+file_sorter:
+  role: >-
+    Add your role here
+  goal: >-
+    Add your goal here
+  backstory: >-
+    Add your backstory here
+  llm: Add your llm here with format provider/model
+software_engineer:
+  role: >-
+    Add your role here
+  goal: >-
+    Add your goal here
+  backstory: >-
+    Add your backstory here
+  llm: Add your llm here with format provider/model
