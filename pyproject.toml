@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "evilgpt"
+version = "0.1.0"
+description = "Malware"
+authors = ["bboynton97@gmail.com"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+agentops = "^0.3.12"
+crewai = "^0.63.6"
+crewai-tools= "0.12.1"
+
+[project.scripts]
+evilgpt = "evilgpt.main:run"
+run_crew = "evilgpt.main:run"
+train = "evilgpt.main:train"
+replay = "evilgpt.main:replay"
+test = "evilgpt.main:test"
