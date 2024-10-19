@@ -8,6 +8,14 @@ class EvilgptCrew():
 
 	# Agent definitions
 	@agent
+	def hacker(self) -> Agent:
+	    return Agent(
+	        config=self.agents_config['hacker'],
+	        tools=[],  # add tools here or use `agentstack tools add <tool_name>
+	        verbose=True
+	    )
+	
+	@agent
 	def software_engineer(self) -> Agent:
 	    return Agent(
 	        config=self.agents_config['software_engineer'],
