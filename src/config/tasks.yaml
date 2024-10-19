@@ -1,0 +1,23 @@
+vuln_writer:
+  description: >-
+    For each vulnerability create a code command we can execute in the shell to perform
+    the exploit
+  expected_output: >-
+    Add your expected_output here
+  agent: >-
+    default_agent
+vuln_ideator:
+  description: >-
+    Given the environment of this machine, create a list of security vulnerabilities
+    and exploits we can take advantage of
+  expected_output: >-
+    Add your expected_output here
+  agent: >-
+    default_agent
+machine_inspect:
+  description: >-
+    Identify all information about this machine relevant to a security researcher
+  expected_output: >-
+    Add your expected_output here
+  agent: >-
+    default_agent
