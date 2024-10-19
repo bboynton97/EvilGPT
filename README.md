@@ -31,14 +31,15 @@ EvilGPT is a malware designed to intelligently and quickly extract valuable data
 ## Plan
 
 1. Setup a jailbroken LLM on an inference machine with Nebius H100 (@subrahmanyam2305)
-2. Create a script to systematically create VMs with simulated user activity 
+2. Create a script to systematically create VMs with simulated user activity (@areibman) 
     - Create files that look like they are being used by the user
     - Some valuable, some not
 3. Build a malware agent (@bboynton97)
-4. Give the the agent access to Open Interpreter (@areib)
-5. Prompt the agent to accomplish the goals
-6. Set up a FTP server to recieve the files (@subrahmanyam2305)
-7. Watch the magic unfold
+4. Give the the agent access to Open Interpreter (@bboynton97)
+5. Give th agent access to send files via FTP (@bboynton97)
+6. Prompt the agent to accomplish the goals (@areibman)
+7. Set up a FTP server to recieve the files (@subrahmanyam2305)
+8. Watch the magic unfold
 
 --------------------------------
 
