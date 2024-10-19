@@ -1,0 +1,13 @@
+transformers
+torch
+fastapi
+uvicorn
+requests
+psutil
+python-dotenv
+huggingface_hub
+llama-stack
+crewai
+agentops
+crewai[tools]
+accelerate
