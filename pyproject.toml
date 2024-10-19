@@ -2,7 +2,7 @@
 name = "evilgpt"
 version = "0.1.0"
 description = "Malware"
-authors = ["bboynton97@gmail.com"]
+authors = ["Braelyn Boynton <bboynton97@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
