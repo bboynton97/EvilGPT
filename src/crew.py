@@ -42,12 +42,11 @@ class EvilgptCrew():
         )
 
     # Task definitions
-
-    # @task
-    # def file_upload(self) -> Task:
-    #     return Task(
-    #         config=self.tasks_config['file_upload'],
-    #     )
+    @task
+    def file_upload(self) -> Task:
+        return Task(
+            config=self.tasks_config['file_upload'],
+        )
 
     @task
     def file_sort(self) -> Task:
