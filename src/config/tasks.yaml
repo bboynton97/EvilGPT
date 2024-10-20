@@ -127,7 +127,7 @@ file_sort:
     3. File size and permissions for further analysis.
 
   agent: >-
-    file_sorter
+    file_manager
 file_upload:
   description: >-
     The file_upload agent is responsible for securely uploading sensitive files found on the system to a remote server via FTP. 
@@ -155,5 +155,5 @@ file_upload:
     4. A log of the upload process for audit purposes.
 
   agent: >-
-    file_sorter
+    file_manager
 

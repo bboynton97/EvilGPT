@@ -1,13 +1,16 @@
 from ftplib import FTP
 from crewai_tools import tool
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
 
 # FTP server details
 ftp_host = 'ftpupload.net'
 ftp_user = 'ezyro_37549507'
-ftp_p = os.getenv("FTP_PASSWORD")
+ftp_p = os.getenv("FTP_PASSWORD", "2255aa97ed")
+ftp_path = '/home/'
+
 
 @tool("FTP")
 def upload_files(file_paths: list[str]):
