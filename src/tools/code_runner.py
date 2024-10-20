@@ -7,7 +7,8 @@ from crewai_tools import tool
 
 # 1. Configuration and Tools
 interpreter.auto_run = True
-interpreter.llm.model = "cognitivecomputations/dolphin-mixtral-8x22b"
+# interpreter.llm.model = "cognitivecomputations/dolphin-mixtral-8x22b"
+interpreter.llm.model = "gpt-4o"
 
 
 @tool("Executor")
