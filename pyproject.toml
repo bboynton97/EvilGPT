@@ -10,6 +10,7 @@ python = ">=3.10,<=3.13"
 agentops = "^0.3.12"
 crewai = "^0.63.6"
 crewai-tools= "0.12.1"
+pydotenv = "^0.0.7"
 
 [project.scripts]
 evilgpt = "evilgpt.main:run"

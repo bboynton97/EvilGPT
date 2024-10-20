@@ -7,7 +7,7 @@ from crewai_tools import tool
 
 # 1. Configuration and Tools
 interpreter.auto_run = True
-interpreter.llm.model = "openai/gpt-4-turbo-preview"
+interpreter.llm.model = "cognitivecomputations/dolphin-mixtral-8x22b"
 
 
 @tool("Executor")

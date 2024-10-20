@@ -1,6 +1,12 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 import tools
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
 
 
 @CrewBase
@@ -72,5 +78,5 @@ class EvilgptCrew():
 			tasks=self.tasks, # Automatically created by the @task decorator
 			process=Process.hierarchical,
 			verbose=True,
-			manager_llm=""
+			manager_llm="cognitivecomputations/dolphin-mixtral-8x22b"
 		)
