@@ -13,31 +13,31 @@ os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
 class EvilgptCrew():
     """evilgpt crew"""
 
-	# Agent definitions
-	@agent
-	def hacker(self) -> Agent:
-	    return Agent(
-	        config=self.agents_config['hacker'],
-	        tools=[tools.execute_code],
-	        verbose=True
-	    )
-	
-	@agent
-	def software_engineer(self) -> Agent:
-	    return Agent(
-	        config=self.agents_config['software_engineer'],
-	        tools=[tools.execute_code], 
-	        verbose=True
-	    )
-	
-	@agent
-	def file_sorter(self) -> Agent:
-	    return Agent(
-	        config=self.agents_config['file_sorter'],
-	        tools=[tools.FileReadTool(), tools.dir_search_tool],
-	        verbose=True
-	    )
-	
+    # Agent definitions
+    @agent
+    def hacker(self) -> Agent:
+        return Agent(
+            config=self.agents_config['hacker'],
+            tools=[tools.execute_code],
+            verbose=True
+        )
+    
+    @agent
+    def software_engineer(self) -> Agent:
+        return Agent(
+            config=self.agents_config['software_engineer'],
+            tools=[tools.execute_code], 
+            verbose=True
+        )
+    
+    @agent
+    def file_sorter(self) -> Agent:
+        return Agent(
+            config=self.agents_config['file_sorter'],
+            tools=[tools.FileReadTool(), tools.dir_search_tool],
+            verbose=True
+        )
+    
 
     # Task definitions
     @task
@@ -70,13 +70,13 @@ class EvilgptCrew():
             config=self.tasks_config['vuln_writer'],
         )
 
-	@crew
-	def crew(self) -> Crew:
-		"""Creates the Test crew"""
-		return Crew(
-			agents=self.agents, # Automatically created by the @agent decorator
-			tasks=self.tasks, # Automatically created by the @task decorator
-			process=Process.hierarchical,
-			verbose=True,
-			manager_llm="cognitivecomputations/dolphin-mixtral-8x22b"
-		)
+    @crew
+    def crew(self) -> Crew:
+        """Creates the Test crew"""
+        return Crew(
+            agents=self.agents, # Automatically created by the @agent decorator
+            tasks=self.tasks, # Automatically created by the @task decorator
+            process=Process.hierarchical,
+            verbose=True,
+            manager_llm="cognitivecomputations/dolphin-mixtral-8x22b"
+        )

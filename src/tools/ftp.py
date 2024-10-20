@@ -6,7 +6,7 @@ load_dotenv()
 
 # FTP server details
 ftp_host = 'ftpupload.net'
-ftp_user = 'if0_37549272'
+ftp_user = 'ezyro_37549507'
 ftp_p = os.getenv("FTP_PASSWORD")
 
 @tool("FTP")
