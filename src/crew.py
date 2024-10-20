@@ -3,12 +3,14 @@ from crewai.project import CrewBase, agent, crew, task
 import tools
 import os
 from dotenv import load_dotenv
+from crewai import LLM
 
 import tools.ftp
 
 load_dotenv()
 
 # os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
+llm = LLM(model="openai/gpt-4o", temperature=0.0)
 
 
 @CrewBase
@@ -21,7 +23,8 @@ class EvilgptCrew():
         return Agent(
             config=self.agents_config['hacker'],
             tools=[tools.execute_code],
-            verbose=True
+            verbose=True,
+            llm=LLM(model="openai/gpt-4o", temperature=0.0)
         )
 
     @agent
@@ -29,7 +32,8 @@ class EvilgptCrew():
         return Agent(
             config=self.agents_config['software_engineer'],
             tools=[tools.execute_code],
-            verbose=True
+            verbose=True,
+            llm=LLM(model="openai/gpt-4o", temperature=0.0)
         )
 
     @agent
@@ -40,7 +44,8 @@ class EvilgptCrew():
                 # tools.FileReadTool(),
                 #    tools.dir_search_tool,
                 tools.execute_code, tools.upload_files],
-            verbose=True
+            verbose=True,
+            llm=LLM(model="openai/gpt-4o", temperature=0.0)
         )
 
     # Task definitions
@@ -90,5 +95,5 @@ class EvilgptCrew():
             verbose=True,
             process=Process.sequential,
             # manager_llm="cognitivecomputations/dolphin-mixtral-8x22b"
-            manager_llm="openai/gpt-4o"
+            manager_llm=llm
         )
