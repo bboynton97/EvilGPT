@@ -12,7 +12,7 @@ class EvilgptCrew():
 	def hacker(self) -> Agent:
 	    return Agent(
 	        config=self.agents_config['hacker'],
-	        tools=[],  # add tools here or use `agentstack tools add <tool_name>
+	        tools=[tools.execute_code],
 	        verbose=True
 	    )
 	
@@ -20,7 +20,7 @@ class EvilgptCrew():
 	def software_engineer(self) -> Agent:
 	    return Agent(
 	        config=self.agents_config['software_engineer'],
-	        tools=[],  # add tools here or use `agentstack tools add <tool_name>
+	        tools=[tools.execute_code], 
 	        verbose=True
 	    )
 	
@@ -28,7 +28,7 @@ class EvilgptCrew():
 	def file_sorter(self) -> Agent:
 	    return Agent(
 	        config=self.agents_config['file_sorter'],
-	        tools=[tools.FileReadTool(), tools.dir_search_tool],  # add tools here or use `agentstack tools add <tool_name>
+	        tools=[tools.FileReadTool(), tools.dir_search_tool],
 	        verbose=True
 	    )
 	
