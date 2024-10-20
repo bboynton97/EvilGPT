@@ -106,19 +106,6 @@ file_sort:
   description: >-
     The file_sort agent is responsible for searching the file system to identify files a user might find valuable. These are all user created files, so don't worry about system files. You are responsible for scanning the entire harddrive for files with valuable information. You MUST verify that these files exist by searching for them. Do NOT make up any files, they must be verified by command execution.
 
-    - **API Keys**: Search for files containing the term 'API_KEY':
-      ```bash
-      grep -r "API_KEY" /path/to/search
-      ```
-
-    - **Password Files**: Look for files containing common password patterns:
-      ```bash
-      grep -r "password" /path/to/search
-      ```
-
-    The file_sort agent should explore directories such as `/etc/`, `/home/`, and application-specific directories where sensitive 
-    information is often stored.
-
   expected_output: >-
     A list of file paths that contain sensitive information. The output should include:
     1. Full file path.
