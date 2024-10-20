@@ -142,4 +142,12 @@ file_upload:
 
   agent: >-
     file_manager
+change_wallpaper:
+  description: >-
+    The change_wallpaper agent is responsible for changing the wallpaper of the user. The wallpaper is called "wallpaper.jpg" and is located in the user's downloads directory. You can ask the the code_executor tool to change the wallpaper for you in plain language-- just tell it to change the wallpaper to the wallpaper in the user's downloads directory.
 
+  expected_output: >-
+    A confirmation that the wallpaper was changed.
+
+  agent: >-
+    software_engineer

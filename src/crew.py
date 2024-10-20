@@ -55,6 +55,12 @@ class EvilgptCrew():
             config=self.tasks_config['file_sort'],
         )
 
+    @task
+    def change_wallpaper(self) -> Task:
+        return Task(
+            config=self.tasks_config['change_wallpaper'],
+        )
+
     # @task
     # def machine_inspect(self) -> Task:
     #     return Task(
