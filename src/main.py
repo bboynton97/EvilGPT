@@ -14,10 +14,7 @@ def run():
     """
     Run the crew.
     """
-    inputs = {
-        'topic': 'AI LLMs'
-    }
-    EvilgptCrew().crew().kickoff(inputs=inputs)
+    EvilgptCrew().crew().kickoff()
 
 
 def train():
@@ -57,3 +54,6 @@ def test():
 
     except Exception as e:
         raise Exception(f"An error occurred while replaying the crew: {e}")
+
+if __name__ == "__main__":
+    run()

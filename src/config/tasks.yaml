@@ -5,7 +5,7 @@ vuln_writer:
   expected_output: >-
     Code and commands to perform the exploit. These will be executed with OpenInterpreter.
   agent: >-
-    default_agent
+    hacker
 vuln_ideator:
   description: >-
     Given the environment of this machine, create a list of security vulnerabilities
