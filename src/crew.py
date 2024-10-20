@@ -85,9 +85,9 @@ class EvilgptCrew():
         return Crew(
             agents=self.agents,  # Automatically created by the @agent decorator
             tasks=self.tasks,  # Automatically created by the @task decorator
-            process=Process.hierarchical,
+            # process=Process.hierarchical,
             verbose=True,
-            # process=Process.sequential,
+            process=Process.sequential,
             # manager_llm="cognitivecomputations/dolphin-mixtral-8x22b"
             manager_llm="openai/gpt-4o"
         )
