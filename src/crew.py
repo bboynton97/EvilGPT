@@ -5,7 +5,6 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-pr
 
 # os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
 
