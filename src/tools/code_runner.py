@@ -11,7 +11,7 @@ interpreter.llm.model = "openai/gpt-4-turbo-preview"
 
 
 @tool("Executor")
-def execute_cli_command(command: str):
-    """Create and Execute code using Open Interpreter."""
-    result = interpreter.chat(command)
+def execute_code(code: str):
+    """A tool to execute code using Open Interpreter. Returns the output of the code."""
+    result = interpreter.chat(f"execute this code with no changes: {code}")
     return result
