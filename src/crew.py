@@ -4,6 +4,8 @@ import tools
 import os
 from dotenv import load_dotenv
 
+import tools.ftp
+
 load_dotenv()
 
 # os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
@@ -37,7 +39,7 @@ class EvilgptCrew():
             tools=[
                 # tools.FileReadTool(),
                 #    tools.dir_search_tool,
-                tools.execute_code],
+                tools.execute_code, tools.upload_files],
             verbose=True
         )
 
