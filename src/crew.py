@@ -34,7 +34,10 @@ class EvilgptCrew():
     def file_manager(self) -> Agent:
         return Agent(
             config=self.agents_config['file_manager'],
-            tools=[tools.FileReadTool(), tools.dir_search_tool],
+            tools=[
+                # tools.FileReadTool(),
+                #    tools.dir_search_tool,
+                tools.execute_code],
             verbose=True
         )
 
