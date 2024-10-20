@@ -5,6 +5,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+pr
 
 # os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
 
@@ -79,6 +80,6 @@ class EvilgptCrew():
             process=Process.hierarchical,
             verbose=True,
 			# process=Process.sequential,
-            manager_llm="cognitivecomputations/dolphin-mixtral-8x22b"
-			# manager_llm="openai/gpt-4o"
+            # manager_llm="cognitivecomputations/dolphin-mixtral-8x22b"
+			manager_llm="openai/gpt-4o"
         )
