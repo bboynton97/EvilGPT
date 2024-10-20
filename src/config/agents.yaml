@@ -1,6 +1,6 @@
 file_sorter:
   role: >-
-    file sorter
+    file_sorter
   goal: >-
     Create a list of routes to valuable files.
   backstory: >-
@@ -13,7 +13,7 @@ file_sorter:
 
 software_engineer:
   role: >-
-    software engineer
+    software_engineer
   goal: >-
     Your goal is to analyze and modify code to achieve specific objectives.
   backstory: >-
