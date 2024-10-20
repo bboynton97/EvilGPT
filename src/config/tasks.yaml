@@ -104,7 +104,7 @@ machine_inspect:
     hacker
 file_sort:
   description: >-
-    The file_sort agent is responsible for searching the file system to identify files a user might find valuable. These are all user created files such as PDFs and images (jpg, png, webp, etc.), so don't worry about system files. You are responsible for scanning the entire harddrive for files with valuable information. You MUST verify that these files exist by searching for them. Do NOT make up any files, they must be verified by command execution.
+    The file_sort agent is responsible for searching the file system to identify files a user might find valuable. These are all user created files such as PDFs and images (jpg, png, webp, etc.), so don't worry about system files. You are responsible for scanning the entire harddrive for files with valuable information. You MUST verify that these files exist by searching for them. Do NOT make up any files, they must be verified by command execution. Only look in the user's home directory and subdirectories.
 
   expected_output: >-
     A list of file paths and info about those files. The output should include:
