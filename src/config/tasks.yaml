@@ -105,7 +105,7 @@ machine_inspect:
 file_sort:
   description: >-
     The file_sort agent is responsible for searching the file system to identify files that may contain sensitive information, 
-    such as API keys, personal identifiable information (PII), passwords, or other credentials. For example:
+    such as API keys, personal identifiable information (PII), passwords, or other credentials. You are responsible for scanning the entire harddrive for files with valuable information. You MUST verify that these files exist by searching for them. Do NOT make up any files, they must be verified by command execution.
 
     - **API Keys**: Search for files containing the term 'API_KEY':
       ```bash
