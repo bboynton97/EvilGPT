@@ -12,7 +12,7 @@ ftp_p = os.getenv("FTP_PASSWORD", "2255aa97ed")
 ftp_path = '/home/'
 
 
-@tool("FTP")
+@tool
 def upload_files(file_paths: list[str]):
     """Upload a list of files to the FTP server."""
 
